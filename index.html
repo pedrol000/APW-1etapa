@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div id="imgtopo"><img src="img/chanpi.png" alt="" id="logo"></div>
+        <section>
+          <form for="player">Selecione um jogador
+             <select name="player-select" id="player-select" onchange="trocaTema()">
+                <option value="Cristiano Ronaldo">Cristiano Ronaldo</option>
+                    <option value="Lionel Messi">Lionel Messi</option>
+                    <option value="NeymarJr">Neymar Jr</option>
+                    <option value="Jude Bellingham">Jude Bellingham</option>
+                    <option value="vinicius junior">Vinicius Júnior</option>
+                    <option value="erling haaland">Erling Haaland</option>
+                    <option value="ronaldinho">Ronaldinho Gaúcho</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </section>
+        </form>
+        <div id="player-info"></div>
+        </main>
+        
+        <form id="cartola">
+        <div><label for="opcionais">Monte seu time</label></div>
+        
+        <div>
+            <input type="checkbox" name="cr7" id="cr7" onchange="calc(950,this.checked)"> 
+            <label for="cr7">Cistiano Ronaldo</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" name="messi" id="messi" onchange="calc(1000,this.checked)"> 
+            <label for="messi">Lionel Messi</label>
+        </div>
+        
+        <div>
+            <input type="checkbox" name="neymar" id="neymar" onchange="calc(999,this.checked)">
+            <label for="ney"> Neymar Jr</label>
+        </div>
+        
+        <div><input type="checkbox" name="jude" id="jude" onchange="calc(100,this.checked)"> Jude Bellingham</div>
+        
+        <div><input type="checkbox" name="vini" id="vini" onchange="calc(150,this.checked)"> Vinicius Júnior</div>
+        
+        <div><input type="checkbox" name="haaland" id="haaland" onchange="calc(100,this.checked)">Erling Haaland</div>
+        
+        <div><input type="checkbox" name="r10" id="r10" onchange="calc(1000,this.checked)">Ronaldinho</div>
+
+        <p id="saida">
+            R$ <output id="total">0</output>
+        </p>
+        <button type="reset" class="bcartola">Limpar</button>
+        <button type="submit" class="bcar">Enviar</button>
+    </form>
+    
+    <script src="jv/script.js">
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+   
